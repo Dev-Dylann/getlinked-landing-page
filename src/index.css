@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./assets/font/clash.ttf");
+}
+
+@font-face {
+  font-family: "Made Tommy Outline";
+  src: url("./assets/font/tommy.otf");
+}
+
+@layer components {
+  .gradient {
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+  }
+
+  .gradient2 {
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+  }
+}
