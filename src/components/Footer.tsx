@@ -8,8 +8,8 @@ import locationIcon from '../assets/icons/location.svg'
 
 const Footer = () => {
   return (
-    <section className='bg-[#100B20] px-20 py-12 font-montserrat text-xs flex flex-col gap-8 sm:px-24 md:text-sm'>
-        <article className='flex flex-col gap-3'>
+    <section className='bg-[#100B20] px-20 py-12 font-montserrat text-xs flex flex-col gap-8 sm:px-24 md:text-sm lg:px-28 lg:grid lg:grid-cols-[1fr,_auto,_auto] lg:gap-x-12 lg:text-xs xl:gap-x-20 xl:text-sm xl:px-32 xl:mt-20'>
+        <article className='flex flex-col gap-3 xl:max-w-[600px]'>
             <h2 className='font-clash font-bold text-xl md:text-2xl'>get<span className='text-pinkish'>linked</span></h2>
 
             <p className='leading-[21px]'>Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology</p>
@@ -41,7 +41,7 @@ const Footer = () => {
           </article>
         </nav>
 
-        <article className='mt-10'>
+        <article className='mt-10 lg:place-self-start lg:mt-0'>
         <h3 className="font-bold text-pinkish text-sm">Contact Us</h3>
 
         <p className='flex gap-4 mt-2'>
@@ -62,7 +62,7 @@ const Footer = () => {
 
         </article>
 
-        <p className="text-center mt-10">All rights reserved. &copy; getlinked Ltd.</p>
+        <p className="text-center mt-10 lg:col-span-full lg:text-xs">All rights reserved. &copy; getlinked Ltd.</p>
 
     </section>
   )

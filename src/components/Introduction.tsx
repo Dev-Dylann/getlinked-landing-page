@@ -7,7 +7,7 @@ const Introduction = () => {
         <img src={bigIdea} alt="The Big Idea" className='lg:w-[80%]' />
         <img src={arrow} alt="Arrow" className='lg:hidden' />
 
-        <article className='mt-6 '>
+        <article className='mt-6'>
             <h2 className='font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Introduction to getLinked</h2>
             <h2 className='text-pinkish font-clash text-xl font-bold  md:text-2xl lg:text-3xl xl:text-4xl'>tech Hackathon 1.0</h2>
 

@@ -14,8 +14,8 @@ const Header = ({setIsNav}: HeaderProps) => {
           <img src={navIcon} alt="Nav Open Icon" className='w-[19px] h-[14px]' />
         </button>
 
-        <nav aria-label='Desktop Nav' className='grow'>
-          <ul className='hidden lg:flex items-center justify-end font-montserrat gap-8 xl:gap-12 2xl:gap-16 '>
+        <nav aria-label='Desktop Nav' className='grow hidden lg:block'>
+          <ul className='flex items-center justify-end font-montserrat gap-8 xl:gap-12 2xl:gap-16 '>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#faq">FAQs</a></li>

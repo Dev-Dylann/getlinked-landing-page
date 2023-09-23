@@ -8,7 +8,7 @@ import hackathonGuy from '../assets/images/hackathon-guy.png'
 const Hero = () => {
   return (
     
-    <section className='relative flex flex-col items-center py-8 lg:grid lg:grid-cols-2 '>
+    <section className='relative flex flex-col items-center py-8 lg:grid lg:grid-cols-2'>
         {/* Lens Flare Image for background */}
         <div className='absolute -top-20 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light sm:bg-center sm:h-screen sm:-top-36'></div>
 
@@ -37,9 +37,9 @@ const Hero = () => {
             </div>
         </article>
 
-        <article className='mt-4 w-full h-[50vh] max-h-[450px] relative lg:h-[60vh]'>
-            <div className='w-full bg-[lightgray] bg-opacity-50 '>
-                <img src={hackathonGuy} alt="Hackathon Guy" className='absolute w-full mix-blend-luminosity' />
+        <article className='mt-4 w-full h-[50vh] max-h-[450px] relative lg:h-[60vh] border'>
+            <div className='w-full bg-[lightgray] bg-opacity-50 relative'>
+                <img src={hackathonGuy} alt="Hackathon Guy" className='absolute w-full mix-blend-luminosity lg:w-fit' />
             </div>
 
             <div className='w-full bg-[lightgray] bg-opacity-50 '>

@@ -17,7 +17,7 @@ const MobileNav = ({isNav, setIsNav}: MobileNavProps) => {
         </button>
 
         <nav aria-label='Mobile Nav' className='font-inter mt-10'>
-        <ul className='flex flex-col gap-7 text-lg'>
+        <ul className='flex flex-col gap-7 text-lg w-fit'>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#faq">FAQs</a></li>
