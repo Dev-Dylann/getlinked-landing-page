@@ -10,7 +10,7 @@ const Hero = () => {
     
     <section className='relative flex flex-col items-center py-8 lg:grid lg:grid-cols-2'>
         {/* Lens Flare Image for background */}
-        <div className='absolute -top-20 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light sm:bg-center sm:h-screen sm:-top-36'></div>
+        <div className='absolute -top-20 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light mask sm:bg-center sm:h-screen sm:-top-36 lg:-left-44'></div>
 
         <h3 className='font-montserrat text-center font-bold italic relative sm:text-lg lg:col-span-full lg:text-right lg:text-xl lg:mx-12 xl:text-2xl xl:mx-20 2xl:text-4xl 2xl:mx-32'>
             Igniting a Revolution in HR Innovation
@@ -18,8 +18,8 @@ const Hero = () => {
         </h3>
 
         <article className='flex flex-col items-center text-center font-bold mt-12 lg:mt-0 lg:text-left lg:items-start lg:px-12 xl:px-20 2xl:px-32'>
-            <h2 className='text-[32px] leading-normal font-clash sm:text-4xl'>getlinked Tech </h2>
-            <h2 className='text-[32px] leading-[34px] font-clash sm:text-4xl'>
+            <h2 className='text-[32px] leading-normal font-clash sm:text-4xl lg:text-5xl'>getlinked Tech </h2>
+            <h2 className='text-[32px] leading-[34px] font-clash sm:text-4xl lg:text-5xl'>
                 Hackathon
                 <span className='text-pinkish'> 1.0</span>
                 <img src={chain} alt="Chain" width='32' height='32' className='inline' />
@@ -37,13 +37,13 @@ const Hero = () => {
             </div>
         </article>
 
-        <article className='mt-4 w-full h-[50vh] max-h-[450px] relative lg:h-[60vh] border'>
+        <article className='mt-4 w-full h-[50vh] max-h-[450px] relative lg:h-[60vh]'>
             <div className='w-full bg-[lightgray] bg-opacity-50 relative'>
-                <img src={hackathonGuy} alt="Hackathon Guy" className='absolute w-full mix-blend-luminosity lg:w-fit' />
+                <img src={hackathonGuy} alt="Hackathon Guy" className='absolute w-full mix-blend-luminosity md:max-w-[400px] inset-0 mx-auto lg:w-full lg:inset-1 lg:right-0 lg:max-w-[650px]' />
             </div>
 
             <div className='w-full bg-[lightgray] bg-opacity-50 '>
-                <img src={globe} alt="Globe" className='absolute w-[85%] top-0 left-8 mix-blend-hard-light' />
+                <img src={globe} alt="Globe" className='absolute w-[85%] top-0 left-8 mix-blend-hard-light md:max-w-[400px] inset-0 mx-auto md:top-6 lg:max-w-none' />
             </div>
         </article>
     </section>

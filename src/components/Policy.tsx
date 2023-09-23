@@ -5,7 +5,7 @@ import secureMan from '../assets/images/secure-man.png'
 const Policy = () => {
   return (
     <section className='relative flex flex-col items-center text-center py-16 lg:mt-10 lg:grid lg:grid-cols-2 lg:grid-rows-[auto,_auto] lg:gap-x-6 lg:px-20 lg:text-left xl:px-32 xl:pb-28 xl:gap-x-20 2xl:px-40 2xl:gap-x-28'>
-        <div className='absolute top-[380px] left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-[size:135%] mix-blend-hard-light'></div>
+        <div className='absolute top-[380px] left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-[size:135%] mix-blend-hard-light mask lg:h-full'></div>
 
         <article className='mt-6'>
             <h2 className='font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Privacy Policy and</h2>

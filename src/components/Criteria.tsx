@@ -3,8 +3,8 @@ import criteriaImg from '../assets/images/criteria-image.png'
 const Criteria = () => {
   return (
     <section className='relative flex flex-col items-center text-center py-16 border-b border-gray-700 lg:grid lg:grid-cols-2 lg:px-20 lg:text-left xl:px-32 xl:gap-12 2xl:gap-20 2xl:px-40'>
-        <div className='absolute -top-16 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-left-top bg-cover mix-blend-hard-light'></div>
-        <div className='absolute -bottom-36 right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180'></div>
+        <div className='absolute -top-16 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-left-top bg-cover mix-blend-hard-light mask lg:h-full lg:top-36 lg:-left-48'></div>
+        <div className='absolute -bottom-36 right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180 mask'></div>
 
         <img src={criteriaImg} alt="Judging Criteria" className='xl:w-full xl:place-self-center' />
 

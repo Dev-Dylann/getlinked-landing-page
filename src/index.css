@@ -7,11 +7,6 @@
   src: url("./assets/font/clash.ttf");
 }
 
-@font-face {
-  font-family: "Made Tommy Outline";
-  src: url("./assets/font/tommy.otf");
-}
-
 @layer components {
   .gradient {
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
@@ -19,5 +14,13 @@
 
   .gradient2 {
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+  }
+
+  .mask {
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 1) 10%, rgb(0, 0, 0, 0) 80%);
+    -webkit-mask-size: cover;
+
+    mask-image: radial-gradient(circle at center, rgba(o, 0, 0, 0.7), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
+    mask-size: cover;
   }
 }

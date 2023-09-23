@@ -3,7 +3,7 @@ import arrow from '../assets/images/arrow.png'
 
 const Introduction = () => {
   return (
-    <section id='overview' className='flex flex-col border-b border-gray-700 items-center text-center py-16 mt-16 sm:mt-[250px] lg:mt-10 lg:grid lg:grid-cols-2 lg:px-20 lg:text-left xl:px-32 2xl:px-40'>
+    <section id='overview' className='flex flex-col border-b border-gray-700 items-center text-center py-16 mt-32 md:mt-16 xl:mt-32 lg:grid lg:grid-cols-2 lg:px-20 lg:text-left xl:px-32 2xl:px-40'>
         <img src={bigIdea} alt="The Big Idea" className='lg:w-[80%]' />
         <img src={arrow} alt="Arrow" className='lg:hidden' />
 

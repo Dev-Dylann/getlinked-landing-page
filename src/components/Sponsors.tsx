@@ -8,8 +8,8 @@ import vuzualPlusLogo from '../assets/images/vuzual-plus-logo.svg'
 const Sponsors = () => {
   return (
     <section className='relative flex flex-col items-center text-center py-16 pb-32 border-b border-gray-700 lg:mt-10 lg:px-20 xl:px-32 2xl:px-40'>
-        <div className='absolute -top-28 left-0 w-full h-full -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-[size:130%] mix-blend-hard-light'></div>
-        <div className='absolute -bottom-[300px] right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180'></div>
+        <div className='absolute -top-28 left-0 w-full h-full -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-[size:130%] mix-blend-hard-light mask'></div>
+        <div className='absolute -bottom-[300px] right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180 mask lg:h-full'></div>
 
         <article className='mt-6'>
             <h2 className='font-clash text-xl font-bold md:text-2xl  lg:text-3xl xl:text-4xl'>Partners and Sponsors</h2>

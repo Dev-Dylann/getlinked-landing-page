@@ -6,8 +6,8 @@ import bronzeMedal from '../assets/images/bronze-medal.png'
 const Prizes = () => {
   return (
     <section className='relative flex flex-col items-center text-center py-16 lg:mt-10 lg:grid lg:grid-cols-2 lg:px-20 lg:text-left xl:px-32 2xl:px-40'>
-        <div className='absolute -top-20 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-left-top bg-cover mix-blend-hard-light'></div>
-        <div className='absolute -bottom-32 right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180'></div>
+        <div className='absolute -top-20 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-left-top bg-cover mix-blend-hard-light mask lg:-left-16'></div>
+        <div className='absolute -bottom-32 right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180 mask'></div>
 
         <article className='lg:col-span-full lg:place-self-end lg:w-[45%]'>
             <h2 className='font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Prizes and</h2>
