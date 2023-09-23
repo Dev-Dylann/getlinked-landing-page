@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Header from './Header'
+import MobileNav from './MobileNav'
 import SuccessScreen from './SuccessScreen'
 import RegistrationForm from './RegistrationForm'
 import registerImg from '../assets/images/register-image1.svg'
@@ -23,6 +24,7 @@ const Register = () => {
     <>
         <header className='relative hidden lg:block'>
             <Header setIsNav={setIsNav} />
+            <MobileNav isNav={isNav} setIsNav={setIsNav} />
         </header>
 
         <main className='p-12 flex flex-col gap-12 items-center relative sm:px-16 md:px-20 lg:grid lg:grid-cols-[40%,_1fr] lg:gap-10 lg:items-center lg:px-20 lg:text-left xl:px-32 2xl:px-40'>

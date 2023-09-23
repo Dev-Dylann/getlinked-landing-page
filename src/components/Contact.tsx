@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Header from './Header'
+import MobileNav from './MobileNav'
 import ContactForm from './ContactForm'
 import backIcon from '../assets/icons/back-icon.svg'
 import instagram from '../assets/icons/instagram.svg'
@@ -21,6 +22,7 @@ const Contact = () => {
     <>
         <header className='relative hidden lg:block'>
             <Header setIsNav={setIsNav} />
+            <MobileNav isNav={isNav} setIsNav={setIsNav} />
         </header>
 
         <main className='p-12 flex flex-col relative sm:px-16 md:px-20 lg:flex-row lg:gap-10 lg:items-center lg:px-20 lg:text-left xl:px-32 2xl:px-40 lg:overflow-x-none'>
