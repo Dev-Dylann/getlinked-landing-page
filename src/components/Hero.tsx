@@ -5,8 +5,8 @@ import lensFlare from '../assets/images/purple-lens-flare.svg'
 import curvedLine from '../assets/icons/curve-line.svg'
 import chain from '../assets/images/chain.svg'
 import bang from '../assets/images/bang.svg'
-import globe from '../assets/images/globe.png'
-import hackathonGuy from '../assets/images/hackathon-guy.png'
+import globe from '../assets/images/globe.svg'
+import hackathonGuy from '../assets/images/hackathon-guy.svg'
 
 const Hero = () => {
     const typingRef = useRef<HTMLHeadingElement>(null)
@@ -32,8 +32,6 @@ const Hero = () => {
     <section className='relative flex flex-col items-center py-8 lg:grid lg:grid-cols-2 lg:border-b lg:border-gray-700 lg:pb-0'>
         {/* Lens Flare Image for background */}
         <img src={screen.width < 1024 ? lensFlareMobile : lensFlare} alt="Background Image" className='mask-mobile mix-blend-hard-light absolute -top-16 left-0 w-full h-auto -z-[10] md:-top-28 lg:-left-16 lg:mask-desktop lg:w-4/5' />
-
-        {/* <div className='absolute -top-20 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light mask sm:bg-center sm:h-screen sm:-top-36 lg:-left-44'></div> */}
 
         <h3 ref={typingRef} className='font-montserrat text-center font-bold italic relative sm:text-lg lg:col-span-full lg:text-right lg:text-xl lg:mx-12 xl:text-2xl xl:mx-20 2xl:text-3xl 2xl:mx-32'>
             Igniting a Revolution in HR Innovation

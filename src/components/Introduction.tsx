@@ -1,5 +1,5 @@
-import bigIdea from '../assets/images/the-big-idea.png'
-import arrow from '../assets/images/arrow.png'
+import bigIdea from '../assets/images/the-big-idea.svg'
+import arrow from '../assets/images/arrow.svg'
 
 const Introduction = () => {
   return (

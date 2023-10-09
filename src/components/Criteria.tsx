@@ -1,14 +1,23 @@
-import criteriaImg from '../assets/images/criteria-image.png'
+import lensFlareMobile from '../assets/images/purple-lens-flare-mobile.svg'
+import lensFlare from '../assets/images/purple-lens-flare.svg'
+import criteriaImg from '../assets/images/criteria-image.svg'
+import gradientEllipse from '../assets/images/gradient-ellipse.svg'
 
 const Criteria = () => {
   return (
-    <section className='relative flex flex-col items-center text-center py-16 border-b border-gray-700 lg:grid lg:grid-cols-2 lg:px-20 lg:text-left xl:px-32 xl:gap-12 2xl:gap-20 2xl:px-40'>
-        <div className='absolute -top-16 left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-left-top bg-cover mix-blend-hard-light mask lg:h-full lg:top-36 lg:-left-48'></div>
-        <div className='absolute -bottom-36 right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180 mask'></div>
+    <section className='relative flex flex-col items-center text-center py-16 border-b border-gray-700 lg:grid lg:grid-cols-2 lg:gap-10 lg:px-20 lg:text-left xl:px-32 xl:gap-12 2xl:gap-20 2xl:px-40'>
+        {/* Lens Flare Image for background */}
+        <img src={screen.width < 1024 ? lensFlareMobile : lensFlare} alt="Background Image" className='mask-mobile mix-blend-hard-light absolute top-8 left-0 w-full h-auto -z-[10] md:top-10 lg:top-48 lg:-left-16 lg:mask-desktop lg:w-4/5' />
+        <img src={screen.width < 1024 ? lensFlareMobile : lensFlare} alt="Background Image" className='mask-mobile mix-blend-hard-light rotate-180 absolute bottom-8 right-0 w-full h-auto -z-[10] sm:-bottom-12 md:-bottom-32 lg:-bottom-56 lg:mask-desktop lg:w-4/5' />
+        
 
-        <img src={criteriaImg} alt="Judging Criteria" className='xl:w-full xl:place-self-center' />
+        <div className='relative px-10 place-self-center lg:px-0 xl:w-full xl:place-self-end'>
+            <img src={criteriaImg} alt="Judging Criteria" className='' />
 
-        <article className='mt-6 font-montserrat text-sm leading-[22.5px] px-12 sm:px-16 md:text-base lg:px-0 lg:mt-0 lg:text-sm'>
+            <img src={gradientEllipse} alt="Gradient Ellipse" className='hidden lg:block absolute -top-[8%] left-[13%] -z-[10] w-24' /> 
+        </div>
+
+        <article className='mt-6 font-montserrat text-sm leading-[22.5px] px-12 sm:px-16 md:text-base lg:px-0 lg:mt-0 lg:text-xs'>
             <h2 className='font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Judging Criteria</h2>
             <h2 className='text-pinkish font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Key Attributes</h2>
 

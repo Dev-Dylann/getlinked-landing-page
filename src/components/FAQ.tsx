@@ -1,5 +1,5 @@
 import { Questions } from '../data/faq'
-import questionsImg from '../assets/images/questions.png'
+import questionsImg from '../assets/images/questions.svg'
 import questionMark from '../assets/icons/question-mark.svg'
 import FAQItem from './FAQItem'
 
@@ -23,12 +23,12 @@ const FAQ = () => {
             </ul>
         </article>
 
-        <article className='relative mt-24 lg:row-span-full lg:col-start-2'>
+        <article className='relative mt-24 px-10 lg:px-0 lg:row-span-full lg:col-start-2'>
             <img src={questionsImg} alt="Frequently Asked Questions" className='lg:w-full' />
 
-            <img src={questionMark} alt="Question Mark" className='absolute left-28 -top-8' />
-            <img src={questionMark} alt="Question Mark" className='absolute left-8 -top-2 w-5' />
-            <img src={questionMark} alt="Question Mark" className='absolute left-48 -top-1 w-5' />
+            <img src={questionMark} alt="Question Mark" className='absolute left-[20%] -top-2 w-5 sm:w-7 lg:-top-4 lg:left-[15%]' />
+            <img src={questionMark} alt="Question Mark" className='absolute left-[38%] -top-7 sm:w-10 lg:left-[33%] lg:-top-12 lg:w-9' />
+            <img src={questionMark} alt="Question Mark" className='absolute left-[56%] -top-1 w-5 sm:w-7 lg:-top-3' />
         </article>
     </section>
   )
