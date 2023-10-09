@@ -16,11 +16,19 @@
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
   }
 
-  .mask {
-    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 1) 10%, rgb(0, 0, 0, 0) 80%);
+  .mask-mobile {
+    -webkit-mask-image: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0));
     -webkit-mask-size: cover;
 
-    mask-image: radial-gradient(circle at center, rgba(o, 0, 0, 0.7), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
+    mask-image: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0));
+    mask-size: cover;
+  }
+
+  .mask-desktop {
+    -webkit-mask-image: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0));
+    -webkit-mask-size: cover;
+
+    mask-image: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0));
     mask-size: cover;
   }
 }

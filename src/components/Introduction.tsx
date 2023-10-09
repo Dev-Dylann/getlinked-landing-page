@@ -3,9 +3,13 @@ import arrow from '../assets/images/arrow.png'
 
 const Introduction = () => {
   return (
-    <section id='overview' className='flex flex-col border-b border-gray-700 items-center text-center py-16 mt-32 md:mt-16 xl:mt-32 lg:grid lg:grid-cols-2 lg:px-20 lg:text-left xl:px-32 2xl:px-40'>
-        <img src={bigIdea} alt="The Big Idea" className='lg:w-[80%]' />
-        <img src={arrow} alt="Arrow" className='lg:hidden' />
+    <section id='overview' className='flex flex-col border-b border-gray-700 items-center text-center py-16 lg:grid lg:grid-cols-2 lg:gap-x-[5%] lg:px-20 lg:text-left xl:px-32 2xl:px-40'>
+        <div className='flex flex-col items-center relative'>
+          <img src={bigIdea} alt="The Big Idea" className='lg:w-[80%]' />
+          <img src={arrow} alt="Arrow" className='lg:absolute lg:bottom-0 lg:right-6 lg:w-12 ' />
+
+          <span className='font-montserrat text-sm font-bold absolute inset-0 mx-auto top-[120px] -ml-1.5 text-center lg:top-[45%] lg:text-lg'>The Big<br />Idea</span>
+        </div>
 
         <article className='mt-6'>
             <h2 className='font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Introduction to getLinked</h2>
