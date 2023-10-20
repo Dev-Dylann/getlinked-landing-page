@@ -8,7 +8,7 @@ import locationIcon from '../assets/icons/location.svg'
 
 const Footer = () => {
   return (
-    <section className='bg-[#100B20] px-20 py-12 font-montserrat text-xs flex flex-col gap-8 sm:px-24 md:text-sm lg:px-28 lg:grid lg:grid-cols-[1fr,_auto,_auto] lg:gap-x-12 lg:text-xs xl:gap-x-20 xl:text-sm xl:px-32 xl:mt-20'>
+    <section className='bg-[#100B20] px-20 py-12 font-montserrat text-xs flex flex-col gap-8 sm:px-24 md:text-sm lg:px-28 lg:grid lg:grid-cols-[1fr,_auto,_auto] lg:gap-x-12 lg:text-xs lg:bg-opacity-70 xl:gap-x-20 xl:text-sm xl:px-32 xl:mt-20'>
         <article className='flex flex-col gap-3 xl:max-w-[600px]'>
             <h2 className='font-clash font-bold text-xl md:text-2xl'>get<span className='text-pinkish'>linked</span></h2>
 

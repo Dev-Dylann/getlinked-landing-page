@@ -1,11 +1,13 @@
+import lensFlareMobile from '../assets/images/purple-lens-flare-mobile.svg'
+import lensFlare from '../assets/images/purple-lens-flare.svg'
 import listIcon from '../assets/icons/list-icon.svg'
 import secureIcon from '../assets/icons/secure.svg'
 import secureMan from '../assets/images/secure-man.png'
-
 const Policy = () => {
   return (
     <section className='relative flex flex-col items-center text-center py-16 lg:mt-10 lg:grid lg:grid-cols-2 lg:grid-rows-[auto,_auto] lg:gap-x-6 lg:px-20 lg:text-left xl:px-32 xl:pb-28 xl:gap-x-20 2xl:px-40 2xl:gap-x-28'>
-        <div className='absolute top-[380px] left-0 w-full h-[600px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-[size:135%] mix-blend-hard-light mask lg:h-full'></div>
+        {/* Lens Flare Image for background */}
+      <img src={screen.width < 1024 ? lensFlareMobile : lensFlare} alt="Background Image" className='mask-mobile mix-blend-hard-light absolute bottom-[35%] left-0 w-full h-auto -z-[10] sm:-left-28 md:bottom-[20%] lg:mask-desktop lg:w-4/5 lg:-bottom-[20%] lg:-left-36 xl:-bottom-[35%] xl:-left-44 2xl:-bottom-[45%] 2xl:-left-52' />
 
         <article className='mt-6'>
             <h2 className='font-clash text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl'>Privacy Policy and</h2>

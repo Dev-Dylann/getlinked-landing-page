@@ -1,3 +1,5 @@
+import lensFlareMobile from '../assets/images/purple-lens-flare-mobile.svg'
+import lensFlare from '../assets/images/purple-lens-flare.svg'
 import libertyLogo from '../assets/images/liberty-logo.svg'
 import libertyPayLogo from '../assets/images/libertypay-logo.svg'
 import winwiseLogo from '../assets/images/winwise-logo.svg'
@@ -8,8 +10,9 @@ import vuzualPlusLogo from '../assets/images/vuzual-plus-logo.svg'
 const Sponsors = () => {
   return (
     <section className='relative flex flex-col items-center text-center py-16 pb-32 border-b border-gray-700 lg:mt-10 lg:px-20 xl:px-32 2xl:px-40'>
-        <div className='absolute -top-28 left-0 w-full h-full -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-[size:130%] mix-blend-hard-light mask'></div>
-        <div className='absolute -bottom-[300px] right-0 w-full h-[650px] -z-[1] bg-[url(./src/assets/images/purple-lens-flare.png)] bg-center bg-cover mix-blend-hard-light rotate-180 mask lg:h-full'></div>
+        {/* Lens Flare Image for background */}
+      <img src={screen.width < 1024 ? lensFlareMobile : lensFlare} alt="Background Image" className='mask-mobile mix-blend-hard-light absolute -top-28 left-0 w-full h-auto -z-[10] sm:-top-40 md:-top-56 lg:mask-desktop lg:w-4/5 lg:-top-16 lg:-left-28' />
+      <img src={screen.width < 1024 ? lensFlareMobile : lensFlare} alt="Background Image" className='mask-mobile mix-blend-hard-light rotate-180 absolute -bottom-60 right-0 w-full h-auto -z-[10] sm:-bottom-36 lg:mask-desktop lg:-bottom-60 lg:w-4/5' />
 
         <article className='mt-6'>
             <h2 className='font-clash text-xl font-bold md:text-2xl  lg:text-3xl xl:text-4xl'>Partners and Sponsors</h2>
